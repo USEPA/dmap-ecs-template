@@ -18,7 +18,7 @@
           "awslogs-stream-prefix": "ecs"
         }
       },
-      "name": "sample-fargate-app",
+      "name": "DMAP_DEMO_CONTAINER_NAME",
       "portMappings": [
         {
           "containerPort": 80,
@@ -30,7 +30,7 @@
   ],
   "cpu": "256",
   "executionRoleArn": "arn:aws:iam::012345678910:role/ecsTaskExecutionRole",
-  "family": "fargate-task-definition",
+  "family": "DMAP_DEMO_TASK_DEF",
   "memory": "512",
   "networkMode": "awsvpc",
   "runtimePlatform": {
