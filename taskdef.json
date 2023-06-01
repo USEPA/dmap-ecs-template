@@ -13,7 +13,7 @@
       "logConfiguration": {
         "logDriver": "awslogs",
         "options": {
-          "awslogs-group" : "/DMAP_DEMO_APP",
+          "awslogs-group" : "DMAP_DEMO_APP",
           "awslogs-region": "us-east-1",
           "awslogs-stream-prefix": "ecs"
         }
