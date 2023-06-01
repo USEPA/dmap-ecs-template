@@ -29,7 +29,7 @@
     }
   ],
   "cpu": "256",
-  "executionRoleArn": "arn:aws:iam::893574838178:role/ecsTaskExecutionRole",
+  "executionRoleArn": "arn:aws:iam::893574838178:role/githubintdemo-ecsTaskExecutionRole",
   "family": "DMAP_DEMO_TASK_DEF",
   "memory": "512",
   "networkMode": "awsvpc",
