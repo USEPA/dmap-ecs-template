@@ -1,6 +1,8 @@
 name: Deploy to Amazon ECS2
 
-on: push
+on:
+  push:
+    branches: [ $default-branch ]
 
 env:
   AWS_REGION: us-east-1                   # set this to your preferred AWS region, e.g. us-west-1
@@ -31,6 +33,7 @@ jobs:
         with:
           role-to-assume: arn:aws:iam::893574838178:role/github_usepa_actions_role
           aws-region: us-east-1
+          audience: github.com/USEPA
 
       - name: Login to Amazon ECR
         id: login-ecr
