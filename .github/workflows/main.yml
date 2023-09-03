@@ -1,6 +1,9 @@
 name: Deploy to Amazon ECS2
 
-on: push
+on:
+  push:
+    branches:
+      - staging
 
 env:
   AWS_REGION: us-east-1                   # set this to your preferred AWS region, e.g. us-west-1
