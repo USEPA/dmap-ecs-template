@@ -43,8 +43,7 @@ jobs:
             echo '       }'                                                                              >> targets.json
             echo '      ,"TaskDefinitionArn": "arn:aws:ecs:us-east-1:865144993338:task-definition/adept_staging"'          >> targets.json
             echo '    }'                                                                                 >> targets.json
-            echo -n ',"Input":": "{\"containerOverrides\":[{\"name\":\"adept_staging\",\"command\":[\"AL\",\"1\",\"\"]}]}"                                                                           >> targets.json
-
+            echo ',"Input":": "{\"containerOverrides\":[{\"name\":\"adept_staging\",\"command\":[\"AL\",\"1\",\"\"]}]}"'   >> targets.json
             echo '}]}"'                                                                                  >> targets.json
             echo '   ,"Id": "adept_staging"'                                           >> targets.json
             echo '   ,"RoleArn": "arn:aws:iam::865144993338:role/adept-ecsTaskExecutionRole"' >> targets.json
